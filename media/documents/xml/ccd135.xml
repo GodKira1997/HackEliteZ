@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="01/03/1997 15/02/2019"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value="chinmay shimpi"/>
+	</subject>
+	<author>
+		<display value="occupation"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="occupation"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

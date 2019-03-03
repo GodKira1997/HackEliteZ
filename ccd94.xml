@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="15-05-2019"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value=" nishant vivek"/>
+	</subject>
+	<author>
+		<display value="chenmay ghetipr"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="chenmay ghetipr"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

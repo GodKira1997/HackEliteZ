@@ -1,0 +1,757 @@
+<html !DOCTYPE>
+
+<head>
+    <title>
+        Meditizer
+    </title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta name="description" content="">
+    <meta name="keywords" content="ocr">
+    <meta name="author" content="HackEliteZ">
+
+    <!-- Stylesheets -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navbrand">
+            <a href="#">Meditizer</a>
+        </div>
+        <div id="navright">
+            <a class="active" href="#">Home</a>
+            <a href="about.html">About us</a>
+        </div>
+    </div>
+    <div id="body-content" style="overflow-y: hidden; height: 90vh;padding-top: 10vh !important;">
+        <table style="width: 100vw; height: inherit;">
+            <tr>
+                <td id="inputOCR" class="showBoxes">
+                    <div class="by3head">
+                        <p>Image</p>
+                    </div>
+                    <div id="img-scroll" style="overflow-y: auto;display: block;
+    height: 83vh;">
+                        <img src="image/Medical%20report%201.jpg" />
+                    </div>
+                </td>
+                <td id="outputOCR" class="showBoxes">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'OCRoutput','loader1')" id="defaultOpen"><i class="fa fa-file-text-o" aria-hidden="true"></i> OCR Output</button>
+                        <button class="tablinks" onclick="openTab(event, 'FHIR','loader2')"><i class="fa fa-file-text-o" aria-hidden="true"></i> FHIR</button>
+                        <button class="tablinks" onclick="openTab(event, 'CCD','loader3')"><i class="fa fa-file-code-o" aria-hidden="true"></i> CCD</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="OCRoutput" class="tabcontent">
+                        <div id="loader1" class="contentloader">
+                            <div class="dna">
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabboxes">
+                            <pre>dsafdafdsafdasf
+                            dfsadsfdsaf
+                            dsafdasfdsaf
+                            dsafdasfds
+                            fdsfdsaf
+                            dsfdsafdsa
+                            fdsafdsafdsa
+                            fdsafdsafds
+                            afdsafdsafds
+                            afdsafdsafdsa
+                            fdsafdsfasdf
+                            dsfdsafdsaf
+                            dsafdsffds
+                            fdsfdsafdsa
+                            fdsfdsafdsaf
+                            dsfdsafdsf
+                            dsafdsfdsafds
+                            afsdafdsafdsf
+                            sadfadsfdsaf
+                            dsfsdfdsf
+                            sdfsdfdsafsadfd
+                            safadsf
+                            dsadsafadsf
+                            dsafsdfdsafdas
+                            fdsfsdfasfd
+                            dsfaadsfdasfds
+                            afdsfdsfdsf
+                            dsfdsfdsaf
+                            asfdfsdfdsf
+                            asdfdsafdsafas
+                            dfsdafsdafsadf
+                            dsfsdafsda
+                            fdsfcdsafdsafdasf</pre>
+                        </div>
+                    </div>
+
+                    <div id="FHIR" class="tabcontent">
+                        <div id="loader2" class="contentloader">
+                            <div class="dna">
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabboxes">
+                            <pre>dsafdafdsafdasf
+                            dfsadsfdsaf
+                            dsafdasfdsaf
+                            dsafdasfds
+                            fdsfdsaf
+                            dsfdsafdsa
+                            fdsafdsafdsa
+                            fdsafdsafds
+                            afdsafdsafds
+                            afdsafdsafdsa
+                            fdsafdsfasdf
+                            dsfdsafdsaf
+                            dsafdsffds
+                            fdsfdsafdsa
+                            fdsfdsafdsaf
+                            dsfdsafdsf
+                            dsafdsfdsafds
+                            afsdafdsafdsf
+                            sadfadsfdsaf
+                            dsfsdfdsf
+                            sdfsdfdsafsadfd
+                            safadsf
+                            dsadsafadsf
+                            dsafsdfdsafdas
+                            fdsfsdfasfd
+                            dsfaadsfdasfds
+                            afdsfdsfdsf
+                            dsfdsfdsaf
+                            asfdfsdfdsf
+                            asdfdsafdsafas
+                            dfsdafsdafsadf
+                            dsfsdafsda
+                            fdsfcdsafdsafdasf</pre>
+                        </div>
+                    </div>
+
+                    <div id="CCD" class="tabcontent">
+                        <div id="loader3" class="contentloader">
+                            <div class="dna">
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="ele">
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabboxes">
+                            <pre>dsafdafdsafdasf
+                            dfsadsfdsaf
+                            dsafdasfdsaf
+                            dsafdasfds
+                            fdsfdsaf
+                            dsfdsafdsa
+                            fdsafdsafdsa
+                            fdsafdsafds
+                            afdsafdsafds
+                            afdsafdsafdsa
+                            fdsafdsfasdf
+                            dsfdsafdsaf
+                            dsafdsffds
+                            fdsfdsafdsa
+                            fdsfdsafdsaf
+                            dsfdsafdsf
+                            dsafdsfdsafds
+                            afsdafdsafdsf
+                            sadfadsfdsaf
+                            dsfsdfdsf
+                            sdfsdfdsafsadfd
+                            safadsf
+                            dsadsafadsf
+                            dsafsdfdsafdas
+                            fdsfsdfasfd
+                            dsfaadsfdasfds
+                            afdsfdsfdsf
+                            dsfdsfdsaf
+                            asfdfsdfdsf
+                            asdfdsafdsafas
+                            dfsdafsdafsadf
+                            dsfsdafsda
+                            fdsfcdsafdsafdasf</pre>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function openTab(evt, outputType, loader) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(loader).style.display = "block";
+            setTimeout(function() {
+                document.getElementById(loader).style.display = "none";
+            }, 1000);
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(outputType).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<html !DOCTYPE>
+
+<head>
+    <title>
+        Meditizer
+    </title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta name="description" content="">
+    <meta name="keywords" content="ocr">
+    <meta name="author" content="HackEliteZ">
+
+    <!-- Stylesheets -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navbrand">
+            <a href="#">Meditizer</a>
+        </div>
+        <div id="navright">
+            <a class="active" href="#">Home</a>
+            <a href="about.html">About us</a>
+        </div>
+    </div>
+    <div id="body-content">
+        <div id="uploader-form">
+            <form method="post" action="{% url 'form' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h1 style="text-align: center;">Digitizer</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 20px;text-align: center;">Choose a Document</p>
+                <br>
+                <div class="upload-panel">
+                    <input id="PathInput" class="f-input" />
+                    <div class="fileUpload btn-browse">
+                        <span>Browse</span>
+                        <input id="choose-btn" type="file" class="choose" name="imgdoc" multiple>
+                    </div>
+                    <div id="error"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button id="upload-btn" class="btn" type="submit">Upload</button>
+
+            </form>
+        </div>
+        <div id="image-holder"></div>
+    </div>
+    <script>
+        function checkJpeg() {
+            var outputfile = document.getElementById("choose-btn").value.split('.')[0];
+            var extension = document.getElementById("choose-btn").value.split('.')[1];
+            if (extension == "jpeg" || extension == "jpg" || extension == "png") {
+                var tags = document.getElementById("error").childNodes;
+                if (tags.length > 0)
+                    document.getElementById("error").removeChild(tags[0]);
+            } else {
+                document.getElementById("error").innerHTML = "<p>*File Extension not supported</p>";
+            }
+        }
+
+        document.getElementById("choose-btn").onchange = function() {
+            var val = "";
+            //document.getElementById("PathInput").value = this.value.replace("C:\\fakepath\\", "");
+
+            files = document.getElementById("choose-btn").files;
+            val = files[0].name + " " + files[1].name;
+
+            console.log(files.length)
+
+            if (files.length > 2)
+                val += " (+" + (files.length - 2) + " files" + ")";
+
+            console.log(val);
+
+            document.getElementById("PathInput").value = this.value.replace(this.value, val);
+
+            checkJpeg();
+        };
+
+        //Image Preview
+        function handleFileSelect(evt) {
+            var files = evt.target.files;
+
+            // Loop through the FileList and render image files as thumbnails.
+            for (var i = 0, f; f = files[i]; i++) {
+
+                // Only process image files.
+                if (!f.type.match('image.*')) {
+                    continue;
+                }
+
+                var reader = new FileReader();
+
+                // Closure to capture the file information.
+                reader.onload = (function(theFile) {
+                    return function(e) {
+                        // Render thumbnail.
+                        var span = document.createElement('span');
+                        span.innerHTML = [
+                            '<img style="height: 75px; border: 1px solid #000; margin: 5px" src="',
+                            e.target.result,
+                            '" title="', escape(theFile.name),
+                            '"/>'
+                        ].join('');
+
+                        document.getElementById('image-holder').insertBefore(span, null);
+                    };
+                })(f);
+
+                // Read in the image file as a data URL.
+                reader.readAsDataURL(f);
+            }
+        }
+
+        document.getElementById('choose-btn').addEventListener('change', handleFileSelect, false);
+
+    </script>
+</body>
+
+</html>

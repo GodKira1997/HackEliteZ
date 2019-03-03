@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="11/08/1951"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value=" ram verma"/>
+	</subject>
+	<author>
+		<display value=""/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value=""/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

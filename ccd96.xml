@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value=""/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value="1. if the test restult (s) &amp; alarming or unexpected, the  &amp; advised to contact the laboratory immediately for possible remidial advice."/>
+	</subject>
+	<author>
+		<display value="anil pahwa"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="anil pahwa"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

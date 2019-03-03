@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="11/08/1951"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value=" anandi jha"/>
+	</subject>
+	<author>
+		<display value="from left cheek"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="from left cheek"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}    
+{% block content %}
+<div id="home-content">
+        <div id="title">
+            Meditizer
+        </div>
+        <div id="tag-line">
+            Join the cause!
+        </div>
+        <div>
+            <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150" />
+                    <div id="text">
+                        <a href="{% url 'formpage' %}">
+                        <span class="spot"></span>Start</a>
+                    </div>
+                </svg>
+            </div>
+        </div>
+    </div>    
+{% endblock %}    

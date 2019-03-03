@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="body-content2" style="min-height: 85vh !important; padding-top: 10vh;position: absolute; width: 100vw; z-index: 0; background-color: #ffffff42;">
+    {% for obj in patients %}
+    <div class="bar">
+        <div class="barhead">
+            <div>
+                <p>Aadhar: {{obj.id}} | Name: {{obj.name}} </p>
+            </div>
+            
+            <div class="barright">
+                <p> Images</p>
+            </div>
+        </div>
+        <div class="barcontent">
+            <div>
+                <p>IMG: </p>
+            </div>
+            <div class="barright">
+                <a href="" download><i class="fa fa-file-text-o" aria-hidden="true"></i> Extracted-Text</a>
+                <a href="" download><i class="fa fa-file-code-o" aria-hidden="true"></i> FHIR</a>
+                <a href="" download><i class="fa fa-file-code-o" aria-hidden="true"></i> CCD</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{{ patients }}
+{% endblock %}

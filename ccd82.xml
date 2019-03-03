@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<composition>
+	<name value=""/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject/>
+	<name value=""/>
+	<author/>
+	<doctor value=""/>
+	<attester>
+		<mode value="legal"/>
+		<party/>
+	</attester>
+	<doctor value=""/>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

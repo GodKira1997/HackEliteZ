@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="15-02-2019 16-02-2011"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value="'  chinmay shirmpr"/>
+	</subject>
+	<author>
+		<display value="gender"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="gender"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

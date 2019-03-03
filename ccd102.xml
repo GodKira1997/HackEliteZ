@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="04/30/2014 05/01/2014 05/07/2014"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value="test, patient"/>
+	</subject>
+	<author>
+		<display value=" dpmg"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value=" dpmg"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>

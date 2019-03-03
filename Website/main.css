@@ -1,0 +1,1085 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*Default*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Body*/
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: url(image/14019.jpg) no-repeat center fixed;
+}
+
+/*Navigation Bar*/
+
+#navbar {
+    background-color: #ffffff87;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px 2px black;
+    box-shadow: 0 0px 7px 0 black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 2vh 16px;
+    text-decoration: none;
+    font-size: 4vh;
+}
+
+#navbrand a {
+    cursor: default !important;
+}
+
+#navright {
+    float: right;
+}
+
+#navright a:hover {
+    color: #fff;
+    background-color: #0e89ae;
+}
+
+/*Body-content of Home*/
+
+#home-content {
+    margin-top: 30vh;
+    position: absolute;
+    z-index: 0;
+    margin-left: 20vw;
+}
+
+#home-content #title {
+    font-size: 6.1em;
+    color: aliceblue;
+    font-weight: 100;
+    font-family: "Times New Roman", sans-serif;
+    text-shadow: 2px 2px 20px black;
+}
+
+#home-content #tag-line {
+    font-size: 2.1em;
+    color: aliceblue;
+    font-weight: 100;
+    text-shadow: 2px 2px 20px black;
+}
+
+.spot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.svg-wrapper {
+    margin-top: 23px;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #7af6ee;
+}
+
+#shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #003c5f;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+}
+
+#text {
+    margin-top: -35px;
+    text-align: center;
+}
+
+#text a {
+    color: back;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em;
+}
+
+.svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke: #003c5f;
+}
+
+/*Body-content of pages*/
+
+#body-content {
+    padding-top: 15vh;
+    height: 85vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 0;
+    background-color: #ffffff42;
+}
+
+#uploader-form {
+    padding: 10vh 7vw 15vh 7vw;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 50vh;
+    margin: auto;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 6px 30px 1px grey;
+    box-shadow: 0px 6px 30px 1px grey;
+    background-color: white;
+}
+
+.upload-panel {
+    width: 100%;
+}
+
+.upload-panel input.f-input {
+    background-color: white;
+    border: 1px solid gray;
+    width: 60%;
+    max-width: 400px;
+    float: left;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.upload-panel input.choose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.upload-panel .btn-browse {
+    border: 1px solid gray;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+    background-color: #ccc;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#uploader-form .btn {
+    text-align: center;
+    border: 2px solid #087a9c;
+    background-color: white;
+}
+
+#uploader-form #upload-btn {
+    float: right;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#uploader-form #upload-btn:hover {
+    background-color: #087a9c;
+    color: white;
+    cursor: pointer;
+}
+
+#error p {
+    color: red;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.showBoxes {
+    width: calc(50vw - 10px);
+    display: block;
+    height: 88vh;
+}
+
+#inputOCR {
+    overflow-y: hidden;
+    border: 1px solid #e1e1e8;
+}
+
+#inputOCR img {
+    width: 100%;
+}
+
+#outputOCR {
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    border: 1px solid #e1e1e8;
+}
+
+.by3head {
+    height: 5vh;
+    width: 100%;
+    background-color: #087a9c;
+    color: aliceblue;
+    font-weight: bolder;
+    display: inline-grid;
+}
+
+.by3head p {
+    margin: auto;
+    margin-left: 10px;
+}
+
+#outputOCR .by3 {
+    height: calc((85vh - 15vh)/3);
+    width: 100%;
+    background-color: #fff;
+}
+
+#outputOCR .by3 {
+    display: block;
+    overflow-y: auto;
+}
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: inherit;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.tablinks {
+    height: 5vh;
+    width: 20%;
+    background-color: #087a9c;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #fff;
+    color: #087a9c
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: inherit;
+    height: calc(83vh - 20px);
+}
+
+.tabboxes {
+    display: block;
+    overflow-y: auto;
+    height: inherit;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Table scroll */
+
+.tabboxes::-webkit-scrollbar,
+#img-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tabboxes::-webkit-scrollbar-trac,
+#img-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.tabboxes::-webkit-scrollbar-thumb,
+#img-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.tabboxes::-webkit-scrollbar-thumb:hover,
+#img-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Loader */
+
+.contentloader {
+    width: 100%;
+    height: 53vh;
+    position: absolute;
+    background-color: aliceblue;
+    display: block;
+    padding-top: 30vh;
+}
+
+.dna {
+    width: 360px;
+    margin: auto;
+    -webkit-perspective: 270px;
+    perspective: 270px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    letter-spacing: -5px;
+}
+
+.dna:after {
+    letter-spacing: 5px;
+    display: block;
+    padding-top: 50px;
+    color: #aaa;
+    text-align: center;
+    content: 'loading...';
+}
+
+.ele {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    -webkit-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+    -webkit-transform: rotateX(-360deg) translateZ(0);
+    transform: rotateX(-360deg) translateZ(0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 0px;
+}
+
+.ele:nth-of-type(2n) .dot:before {
+    background: deepskyblue;
+}
+
+.dot {
+    width: inherit;
+    height: inherit;
+    -webkit-transform: translateZ(-20px);
+    transform: translateZ(-20px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.dot:before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    display: block;
+    background: #aaa;
+    border-radius: 50%;
+    -webkit-animation: rotate 3s linear infinite reverse;
+    animation: rotate 3s linear infinite reverse;
+    -webkit-transform: rotateX(-360deg) translateZ(0);
+    transform: rotateX(-360deg) translateZ(0);
+}
+
+.ele:nth-of-type(1),
+.ele:nth-of-type(1) .dot:before {
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+}
+
+.ele:nth-of-type(1):nth-of-type(odd) {
+    -webkit-animation-delay: -1.6s;
+    animation-delay: -1.6s;
+}
+
+.ele:nth-of-type(2),
+.ele:nth-of-type(2) .dot:before {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+
+.ele:nth-of-type(2):nth-of-type(odd) {
+    -webkit-animation-delay: -1.7s;
+    animation-delay: -1.7s;
+}
+
+.ele:nth-of-type(3),
+.ele:nth-of-type(3) .dot:before {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+.ele:nth-of-type(3):nth-of-type(odd) {
+    -webkit-animation-delay: -1.8s;
+    animation-delay: -1.8s;
+}
+
+.ele:nth-of-type(4),
+.ele:nth-of-type(4) .dot:before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+
+.ele:nth-of-type(4):nth-of-type(odd) {
+    -webkit-animation-delay: -1.9s;
+    animation-delay: -1.9s;
+}
+
+.ele:nth-of-type(5),
+.ele:nth-of-type(5) .dot:before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.ele:nth-of-type(5):nth-of-type(odd) {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.ele:nth-of-type(6),
+.ele:nth-of-type(6) .dot:before {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+
+.ele:nth-of-type(6):nth-of-type(odd) {
+    -webkit-animation-delay: -2.1s;
+    animation-delay: -2.1s;
+}
+
+.ele:nth-of-type(7),
+.ele:nth-of-type(7) .dot:before {
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+
+.ele:nth-of-type(7):nth-of-type(odd) {
+    -webkit-animation-delay: -2.2s;
+    animation-delay: -2.2s;
+}
+
+.ele:nth-of-type(8),
+.ele:nth-of-type(8) .dot:before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+.ele:nth-of-type(8):nth-of-type(odd) {
+    -webkit-animation-delay: -2.3s;
+    animation-delay: -2.3s;
+}
+
+.ele:nth-of-type(9),
+.ele:nth-of-type(9) .dot:before {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.ele:nth-of-type(9):nth-of-type(odd) {
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.ele:nth-of-type(10),
+.ele:nth-of-type(10) .dot:before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.ele:nth-of-type(10):nth-of-type(odd) {
+    -webkit-animation-delay: -2.5s;
+    animation-delay: -2.5s;
+}
+
+.ele:nth-of-type(11),
+.ele:nth-of-type(11) .dot:before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.ele:nth-of-type(11):nth-of-type(odd) {
+    -webkit-animation-delay: -2.6s;
+    animation-delay: -2.6s;
+}
+
+.ele:nth-of-type(12),
+.ele:nth-of-type(12) .dot:before {
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.ele:nth-of-type(12):nth-of-type(odd) {
+    -webkit-animation-delay: -2.7s;
+    animation-delay: -2.7s;
+}
+
+.ele:nth-of-type(13),
+.ele:nth-of-type(13) .dot:before {
+    -webkit-animation-delay: -1.3s;
+    animation-delay: -1.3s;
+}
+
+.ele:nth-of-type(13):nth-of-type(odd) {
+    -webkit-animation-delay: -2.8s;
+    animation-delay: -2.8s;
+}
+
+.ele:nth-of-type(14),
+.ele:nth-of-type(14) .dot:before {
+    -webkit-animation-delay: -1.4s;
+    animation-delay: -1.4s;
+}
+
+.ele:nth-of-type(14):nth-of-type(odd) {
+    -webkit-animation-delay: -2.9s;
+    animation-delay: -2.9s;
+}
+
+.ele:nth-of-type(15),
+.ele:nth-of-type(15) .dot:before {
+    -webkit-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+}
+
+.ele:nth-of-type(15):nth-of-type(odd) {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+.ele:nth-of-type(16),
+.ele:nth-of-type(16) .dot:before {
+    -webkit-animation-delay: -1.6s;
+    animation-delay: -1.6s;
+}
+
+.ele:nth-of-type(16):nth-of-type(odd) {
+    -webkit-animation-delay: -3.1s;
+    animation-delay: -3.1s;
+}
+
+.ele:nth-of-type(17),
+.ele:nth-of-type(17) .dot:before {
+    -webkit-animation-delay: -1.7s;
+    animation-delay: -1.7s;
+}
+
+.ele:nth-of-type(17):nth-of-type(odd) {
+    -webkit-animation-delay: -3.2s;
+    animation-delay: -3.2s;
+}
+
+.ele:nth-of-type(18),
+.ele:nth-of-type(18) .dot:before {
+    -webkit-animation-delay: -1.8s;
+    animation-delay: -1.8s;
+}
+
+.ele:nth-of-type(18):nth-of-type(odd) {
+    -webkit-animation-delay: -3.3s;
+    animation-delay: -3.3s;
+}
+
+.ele:nth-of-type(19),
+.ele:nth-of-type(19) .dot:before {
+    -webkit-animation-delay: -1.9s;
+    animation-delay: -1.9s;
+}
+
+.ele:nth-of-type(19):nth-of-type(odd) {
+    -webkit-animation-delay: -3.4s;
+    animation-delay: -3.4s;
+}
+
+.ele:nth-of-type(20),
+.ele:nth-of-type(20) .dot:before {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.ele:nth-of-type(20):nth-of-type(odd) {
+    -webkit-animation-delay: -3.5s;
+    animation-delay: -3.5s;
+}
+
+.ele:nth-of-type(21),
+.ele:nth-of-type(21) .dot:before {
+    -webkit-animation-delay: -2.1s;
+    animation-delay: -2.1s;
+}
+
+.ele:nth-of-type(21):nth-of-type(odd) {
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.ele:nth-of-type(22),
+.ele:nth-of-type(22) .dot:before {
+    -webkit-animation-delay: -2.2s;
+    animation-delay: -2.2s;
+}
+
+.ele:nth-of-type(22):nth-of-type(odd) {
+    -webkit-animation-delay: -3.7s;
+    animation-delay: -3.7s;
+}
+
+.ele:nth-of-type(23),
+.ele:nth-of-type(23) .dot:before {
+    -webkit-animation-delay: -2.3s;
+    animation-delay: -2.3s;
+}
+
+.ele:nth-of-type(23):nth-of-type(odd) {
+    -webkit-animation-delay: -3.8s;
+    animation-delay: -3.8s;
+}
+
+.ele:nth-of-type(24),
+.ele:nth-of-type(24) .dot:before {
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.ele:nth-of-type(24):nth-of-type(odd) {
+    -webkit-animation-delay: -3.9s;
+    animation-delay: -3.9s;
+}
+
+.ele:nth-of-type(25),
+.ele:nth-of-type(25) .dot:before {
+    -webkit-animation-delay: -2.5s;
+    animation-delay: -2.5s;
+}
+
+.ele:nth-of-type(25):nth-of-type(odd) {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+.ele:nth-of-type(26),
+.ele:nth-of-type(26) .dot:before {
+    -webkit-animation-delay: -2.6s;
+    animation-delay: -2.6s;
+}
+
+.ele:nth-of-type(26):nth-of-type(odd) {
+    -webkit-animation-delay: -4.1s;
+    animation-delay: -4.1s;
+}
+
+.ele:nth-of-type(27),
+.ele:nth-of-type(27) .dot:before {
+    -webkit-animation-delay: -2.7s;
+    animation-delay: -2.7s;
+}
+
+.ele:nth-of-type(27):nth-of-type(odd) {
+    -webkit-animation-delay: -4.2s;
+    animation-delay: -4.2s;
+}
+
+.ele:nth-of-type(28),
+.ele:nth-of-type(28) .dot:before {
+    -webkit-animation-delay: -2.8s;
+    animation-delay: -2.8s;
+}
+
+.ele:nth-of-type(28):nth-of-type(odd) {
+    -webkit-animation-delay: -4.3s;
+    animation-delay: -4.3s;
+}
+
+.ele:nth-of-type(29),
+.ele:nth-of-type(29) .dot:before {
+    -webkit-animation-delay: -2.9s;
+    animation-delay: -2.9s;
+}
+
+.ele:nth-of-type(29):nth-of-type(odd) {
+    -webkit-animation-delay: -4.4s;
+    animation-delay: -4.4s;
+}
+
+.ele:nth-of-type(30),
+.ele:nth-of-type(30) .dot:before {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+.ele:nth-of-type(30):nth-of-type(odd) {
+    -webkit-animation-delay: -4.5s;
+    animation-delay: -4.5s;
+}
+
+.ele:nth-of-type(31),
+.ele:nth-of-type(31) .dot:before {
+    -webkit-animation-delay: -3.1s;
+    animation-delay: -3.1s;
+}
+
+.ele:nth-of-type(31):nth-of-type(odd) {
+    -webkit-animation-delay: -4.6s;
+    animation-delay: -4.6s;
+}
+
+.ele:nth-of-type(32),
+.ele:nth-of-type(32) .dot:before {
+    -webkit-animation-delay: -3.2s;
+    animation-delay: -3.2s;
+}
+
+.ele:nth-of-type(32):nth-of-type(odd) {
+    -webkit-animation-delay: -4.7s;
+    animation-delay: -4.7s;
+}
+
+.ele:nth-of-type(33),
+.ele:nth-of-type(33) .dot:before {
+    -webkit-animation-delay: -3.3s;
+    animation-delay: -3.3s;
+}
+
+.ele:nth-of-type(33):nth-of-type(odd) {
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.ele:nth-of-type(34),
+.ele:nth-of-type(34) .dot:before {
+    -webkit-animation-delay: -3.4s;
+    animation-delay: -3.4s;
+}
+
+.ele:nth-of-type(34):nth-of-type(odd) {
+    -webkit-animation-delay: -4.9s;
+    animation-delay: -4.9s;
+}
+
+.ele:nth-of-type(35),
+.ele:nth-of-type(35) .dot:before {
+    -webkit-animation-delay: -3.5s;
+    animation-delay: -3.5s;
+}
+
+.ele:nth-of-type(35):nth-of-type(odd) {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+}
+
+.ele:nth-of-type(36),
+.ele:nth-of-type(36) .dot:before {
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.ele:nth-of-type(36):nth-of-type(odd) {
+    -webkit-animation-delay: -5.1s;
+    animation-delay: -5.1s;
+}
+
+.ele:nth-of-type(37),
+.ele:nth-of-type(37) .dot:before {
+    -webkit-animation-delay: -3.7s;
+    animation-delay: -3.7s;
+}
+
+.ele:nth-of-type(37):nth-of-type(odd) {
+    -webkit-animation-delay: -5.2s;
+    animation-delay: -5.2s;
+}
+
+.ele:nth-of-type(38),
+.ele:nth-of-type(38) .dot:before {
+    -webkit-animation-delay: -3.8s;
+    animation-delay: -3.8s;
+}
+
+.ele:nth-of-type(38):nth-of-type(odd) {
+    -webkit-animation-delay: -5.3s;
+    animation-delay: -5.3s;
+}
+
+.ele:nth-of-type(39),
+.ele:nth-of-type(39) .dot:before {
+    -webkit-animation-delay: -3.9s;
+    animation-delay: -3.9s;
+}
+
+.ele:nth-of-type(39):nth-of-type(odd) {
+    -webkit-animation-delay: -5.4s;
+    animation-delay: -5.4s;
+}
+
+.ele:nth-of-type(40),
+.ele:nth-of-type(40) .dot:before {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+.ele:nth-of-type(40):nth-of-type(odd) {
+    -webkit-animation-delay: -5.5s;
+    animation-delay: -5.5s;
+}
+
+.ele:nth-of-type(41),
+.ele:nth-of-type(41) .dot:before {
+    -webkit-animation-delay: -4.1s;
+    animation-delay: -4.1s;
+}
+
+.ele:nth-of-type(41):nth-of-type(odd) {
+    -webkit-animation-delay: -5.6s;
+    animation-delay: -5.6s;
+}
+
+.ele:nth-of-type(42),
+.ele:nth-of-type(42) .dot:before {
+    -webkit-animation-delay: -4.2s;
+    animation-delay: -4.2s;
+}
+
+.ele:nth-of-type(42):nth-of-type(odd) {
+    -webkit-animation-delay: -5.7s;
+    animation-delay: -5.7s;
+}
+
+.ele:nth-of-type(43),
+.ele:nth-of-type(43) .dot:before {
+    -webkit-animation-delay: -4.3s;
+    animation-delay: -4.3s;
+}
+
+.ele:nth-of-type(43):nth-of-type(odd) {
+    -webkit-animation-delay: -5.8s;
+    animation-delay: -5.8s;
+}
+
+.ele:nth-of-type(44),
+.ele:nth-of-type(44) .dot:before {
+    -webkit-animation-delay: -4.4s;
+    animation-delay: -4.4s;
+}
+
+.ele:nth-of-type(44):nth-of-type(odd) {
+    -webkit-animation-delay: -5.9s;
+    animation-delay: -5.9s;
+}
+
+.ele:nth-of-type(45),
+.ele:nth-of-type(45) .dot:before {
+    -webkit-animation-delay: -4.5s;
+    animation-delay: -4.5s;
+}
+
+.ele:nth-of-type(45):nth-of-type(odd) {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.ele:nth-of-type(46),
+.ele:nth-of-type(46) .dot:before {
+    -webkit-animation-delay: -4.6s;
+    animation-delay: -4.6s;
+}
+
+.ele:nth-of-type(46):nth-of-type(odd) {
+    -webkit-animation-delay: -6.1s;
+    animation-delay: -6.1s;
+}
+
+.ele:nth-of-type(47),
+.ele:nth-of-type(47) .dot:before {
+    -webkit-animation-delay: -4.7s;
+    animation-delay: -4.7s;
+}
+
+.ele:nth-of-type(47):nth-of-type(odd) {
+    -webkit-animation-delay: -6.2s;
+    animation-delay: -6.2s;
+}
+
+.ele:nth-of-type(48),
+.ele:nth-of-type(48) .dot:before {
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.ele:nth-of-type(48):nth-of-type(odd) {
+    -webkit-animation-delay: -6.3s;
+    animation-delay: -6.3s;
+}
+
+.ele:nth-of-type(49),
+.ele:nth-of-type(49) .dot:before {
+    -webkit-animation-delay: -4.9s;
+    animation-delay: -4.9s;
+}
+
+.ele:nth-of-type(49):nth-of-type(odd) {
+    -webkit-animation-delay: -6.4s;
+    animation-delay: -6.4s;
+}
+
+.ele:nth-of-type(50),
+.ele:nth-of-type(50) .dot:before {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+}
+
+.ele:nth-of-type(50):nth-of-type(odd) {
+    -webkit-animation-delay: -6.5s;
+    animation-delay: -6.5s;
+}
+
+.ele:nth-of-type(51),
+.ele:nth-of-type(51) .dot:before {
+    -webkit-animation-delay: -5.1s;
+    animation-delay: -5.1s;
+}
+
+.ele:nth-of-type(51):nth-of-type(odd) {
+    -webkit-animation-delay: -6.6s;
+    animation-delay: -6.6s;
+}
+
+.ele:nth-of-type(52),
+.ele:nth-of-type(52) .dot:before {
+    -webkit-animation-delay: -5.2s;
+    animation-delay: -5.2s;
+}
+
+.ele:nth-of-type(52):nth-of-type(odd) {
+    -webkit-animation-delay: -6.7s;
+    animation-delay: -6.7s;
+}
+
+.ele:nth-of-type(53),
+.ele:nth-of-type(53) .dot:before {
+    -webkit-animation-delay: -5.3s;
+    animation-delay: -5.3s;
+}
+
+.ele:nth-of-type(53):nth-of-type(odd) {
+    -webkit-animation-delay: -6.8s;
+    animation-delay: -6.8s;
+}
+
+.ele:nth-of-type(54),
+.ele:nth-of-type(54) .dot:before {
+    -webkit-animation-delay: -5.4s;
+    animation-delay: -5.4s;
+}
+
+.ele:nth-of-type(54):nth-of-type(odd) {
+    -webkit-animation-delay: -6.9s;
+    animation-delay: -6.9s;
+}
+
+.ele:nth-of-type(55),
+.ele:nth-of-type(55) .dot:before {
+    -webkit-animation-delay: -5.5s;
+    animation-delay: -5.5s;
+}
+
+.ele:nth-of-type(55):nth-of-type(odd) {
+    -webkit-animation-delay: -7s;
+    animation-delay: -7s;
+}
+
+.ele:nth-of-type(56),
+.ele:nth-of-type(56) .dot:before {
+    -webkit-animation-delay: -5.6s;
+    animation-delay: -5.6s;
+}
+
+.ele:nth-of-type(56):nth-of-type(odd) {
+    -webkit-animation-delay: -7.1s;
+    animation-delay: -7.1s;
+}
+
+.ele:nth-of-type(57),
+.ele:nth-of-type(57) .dot:before {
+    -webkit-animation-delay: -5.7s;
+    animation-delay: -5.7s;
+}
+
+.ele:nth-of-type(57):nth-of-type(odd) {
+    -webkit-animation-delay: -7.2s;
+    animation-delay: -7.2s;
+}
+
+.ele:nth-of-type(58),
+.ele:nth-of-type(58) .dot:before {
+    -webkit-animation-delay: -5.8s;
+    animation-delay: -5.8s;
+}
+
+.ele:nth-of-type(58):nth-of-type(odd) {
+    -webkit-animation-delay: -7.3s;
+    animation-delay: -7.3s;
+}
+
+.ele:nth-of-type(59),
+.ele:nth-of-type(59) .dot:before {
+    -webkit-animation-delay: -5.9s;
+    animation-delay: -5.9s;
+}
+
+.ele:nth-of-type(59):nth-of-type(odd) {
+    -webkit-animation-delay: -7.4s;
+    animation-delay: -7.4s;
+}
+
+.ele:nth-of-type(60),
+.ele:nth-of-type(60) .dot:before {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+.ele:nth-of-type(60):nth-of-type(odd) {
+    -webkit-animation-delay: -7.5s;
+    animation-delay: -7.5s;
+}
+
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes rotate {
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}

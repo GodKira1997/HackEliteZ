@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<composition>
+	<date value="16/02/2019"/>
+	<title value="Continuity of Care Document"/>
+	<status value="preliminary"/>
+	<subject>
+		<display value="ate!"/>
+	</subject>
+	<author>
+		<display value="d.s. suryawanshi"/>
+	</author>
+	<attester>
+		<mode value="legal"/>
+		<party>
+			<display value="d.s. suryawanshi"/>
+		</party>
+	</attester>
+	<section>
+		<title value="report"/>
+	</section>
+</composition>
